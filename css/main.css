@@ -1,0 +1,546 @@
+/*============================================
+1.0 Setup
+============================================*/
+
+/*
+  Gradient Colors
+  Color 01: #ddd6f3
+  Color 02: #E08283
+
+  Titles Color
+  #ec6676
+
+*/
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  /*background: -webkit-linear-gradient(right, #ddd6f3, #E08283) no-repeat;
+  background: linear-gradient(to left, #ddd6f3, #E08283) no-repeat;*/
+  background-color: #ccc;
+  color: #707070;
+  padding: 40px 0;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/*=================
+1.1 Grid
+=================*/
+
+.wrapper {
+  box-sizing: border-box;
+  display: block;
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5% 0;
+  position: relative;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-12,
+.col-6 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+
+.col-6 {
+  width: 49.75%;
+  float: left;
+}
+
+.row .col-6:first-child {
+  margin-right: 0.5%;
+}
+
+/*=================
+1.2 Reusable Classes
+=================*/
+
+.info-box {
+  padding: 20px;
+}
+
+.info-box h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin: 0 0 20px;
+}
+
+/*============================================
+2.0 Hero
+============================================*/
+
+#hero {
+  padding: 20px;
+}
+
+.hero-box-img {
+  width: 25%;
+  float: left;
+}
+
+.hero-box-img img {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.hero-box-info {
+  width: 60%;
+  float: left;
+  margin: 35px 0 0 5%;
+  text-align: left;
+}
+
+.hero-box-info h1 {
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.hero-box-info h3 {
+  margin: 0 0 2%;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+.hero-box-info p {
+  font-weight: 300;
+}
+
+.hero-box-info p i {
+  margin-right: 10px;
+  font-size: 2em;
+}
+
+/*============================================
+3.0 About
+============================================*/
+
+#about {
+  padding: 20px;
+}
+
+.quotation {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 26px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.about-list {
+  display: block;
+  width: 50%;
+  padding: 0;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.about-list li {
+  margin: 20px 0 0;
+}
+
+.about-list li:first-child {
+  margin: 0;
+}
+
+.about-list i {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0 0 5px;
+}
+
+.about-list p {
+  font-size: 1.2em;
+}
+
+/*============================================
+4.0 Skills
+============================================*/
+
+.skills h2 {
+  color: #913D88;
+}
+
+.skills:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+  
+  position: absolute;
+  bottom: 0;
+  right: -101.15%;
+  
+  background-color: #fff;
+}
+
+.info-box .skill-box:nth-child(2) {
+  margin-top: 40px;  
+}
+
+.skill-box {
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  border-bottom: 0 /*1px dotted #909090*/;
+  text-align: center;
+}
+
+.skill-box p {
+  font-size: 1.1em;
+  margin: 0 0 5px;
+}
+
+.skill-lvl {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: transparent;
+  background-color: #edb8b9;
+}
+
+.skill-lvl.full {
+  background-color: #913D88;
+}
+
+/*============================================
+5.0 Experiences / Education
+============================================*/
+
+.info-box .exp-box:last-child {
+  border-bottom: 0;
+}
+
+.exp-box {
+  margin: 40px 0 0;
+  text-align: left;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.exp-box-img {
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 23%;
+  width: 28%;
+  margin: 0 2% 0 0;
+}
+
+.exp-box-img i {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  font-size: 4em;
+}
+
+.exp-box-info {
+  float: left;
+  width: 70%;
+}
+
+.exp-name {
+  display: inline-block;
+  padding: 2px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.exp-date {
+  margin: 0 0 10px;
+  font-size: 1em;
+  color: #9a9a9a;
+}
+
+.exp-box-info h3 {
+  font-size: 1.4em;
+  margin: 0 0 3px;
+}
+
+.exp-info {
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  color: #9a9a9a;
+}
+
+.experience h2 {
+  color: #E08283;
+}
+
+.experience .exp-name {
+  background-color: #E08283;
+}
+
+.experience .exp-box-img i {
+  top: -10px;
+  color: #E08283;
+}
+
+.education {
+  margin: 0.5% 0 0;
+}
+
+.education h2 {
+  color: #913D88;
+}
+
+.education .exp-name {
+  background-color: #913D88;
+}
+
+.education .exp-box-img i {
+  top: -10px;
+  color: #913D88;
+}
+
+/*============================================
+6.0 Links
+============================================*/
+
+#links {
+  padding: 20px;
+}
+
+#links h2 {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.6em;
+}
+
+.links-wrapper {
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+.links-box {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  margin: 0;
+}
+
+.links-box p {
+  font-size: 1.3em;
+  margin: 0 0 5px;
+}
+
+.links-box a:link,
+.links-box a:visited {
+  display: inline-block;
+  font-size: 3em;
+  color: #909090;
+  text-decoration: none;
+}
+
+.links-box a:hover,
+.links-box a:active {
+  color: #913D88;
+}
+
+/*============================================
+X.0 Queries
+============================================*/
+
+@media (max-width: 1200px) {
+  
+  /* 1.1 Grid */
+
+  .wrapper {
+    padding: 10px 25px;
+    width: 100%;
+  }
+  
+  .row {
+    margin: 0.75% 0;
+  }
+
+  .col-6 {
+    width: 49.6%;
+  }
+
+  .row .col-6:first-child {
+    margin-right: 0.75%;
+  }
+  
+  /*--- 2.0 Hero ---*/
+  
+  .hero-box-img {
+    width: 45%;
+  }
+  
+  .hero-box-info {
+    width: 55%;
+    margin: 50px 0 0;
+  }
+  
+  .hero-box-info h1 {
+    font-size: 3em;
+  }
+
+  .hero-box-info h3 {
+    margin: 0 0 2%;
+  }
+  
+  /*--- 4.0 Skills ---*/
+  
+  .skills:after {
+    height: 10%;
+    right: -101.5%;
+  }
+  
+  /*--- 5.0 Experiences ---*/
+  
+  .exp-box {
+    text-align: center;
+    padding: 0 0 20px;
+    margin: 20px 0;
+    border-bottom: 1px dotted #909090;
+  }
+  
+  .exp-box-img {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 0
+  }
+
+  .exp-box-img i {
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .exp-box-info {
+    float: none;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  
+  /*--- 1.0 Setup ---*/
+  
+  body {
+    font-size: 12px;
+  }
+  
+  /* 1.1 Grid */
+  
+  .row {
+    margin: 0.5% 0;
+  }
+ 
+  .col-6 {
+    width: 100%;
+    float: none;
+    margin: 0.5% 0;
+  }
+
+  .row .col-6:first-child {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  .row .col-6:last-child {
+    margin-bottom: 0;
+  }
+  
+  /*--- 2.0 Hero ---*/
+  
+  .hero-box-img {
+    width: 100%;
+    float: none;
+  }
+  
+  .hero-box-img img {
+    width: 200px;
+    margin: 0 auto 20px;
+  }
+  
+  .hero-box-info {
+    width: 100%;
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .hero-box-info h3 {
+    margin: 4% 0;
+  }
+  
+  /*--- 3.0 About ---*/
+  
+  .quotation {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  
+  /*--- 4.0 Skills ---*/
+  
+  .skills:after {
+    display: none;
+  }
+  
+  .skill-lvl {
+    width: 15px;
+    height: 15px;
+  }
+  
+  /*--- 6.0 Links ---*/
+  
+  .links-box {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  
+}
