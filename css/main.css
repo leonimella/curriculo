@@ -12,6 +12,10 @@
 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -206,16 +210,16 @@ a {
   display: block;
   width: 100%;
   height: 50%;
-  
+
   position: absolute;
   bottom: 0;
   right: -101.15%;
-  
+
   background-color: #fff;
 }
 
 .info-box .skill-box:nth-child(2) {
-  margin-top: 40px;  
+  margin-top: 40px;
 }
 
 .skill-box {
@@ -383,18 +387,52 @@ a {
 }
 
 /*============================================
+7.0 Contact
+============================================*/
+#contact {
+  padding: 30px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+
+input {
+  margin: 0 0 15px;
+}
+
+button {
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 15px 0 0;
+}
+
+/*============================================
 X.0 Queries
 ============================================*/
 
 @media (max-width: 1200px) {
-  
+
   /* 1.1 Grid */
 
   .wrapper {
     padding: 10px 25px;
     width: 100%;
   }
-  
+
   .row {
     margin: 0.75% 0;
   }
@@ -406,18 +444,18 @@ X.0 Queries
   .row .col-6:first-child {
     margin-right: 0.75%;
   }
-  
+
   /*--- 2.0 Hero ---*/
-  
+
   .hero-box-img {
     width: 45%;
   }
-  
+
   .hero-box-info {
     width: 55%;
     margin: 50px 0 0;
   }
-  
+
   .hero-box-info h1 {
     font-size: 3em;
   }
@@ -425,23 +463,23 @@ X.0 Queries
   .hero-box-info h3 {
     margin: 0 0 2%;
   }
-  
+
   /*--- 4.0 Skills ---*/
-  
+
   .skills:after {
     height: 10%;
     right: -101.5%;
   }
-  
+
   /*--- 5.0 Experiences ---*/
-  
+
   .exp-box {
     text-align: center;
     padding: 0 0 20px;
     margin: 20px 0;
     border-bottom: 1px dotted #909090;
   }
-  
+
   .exp-box-img {
     float: none;
     width: 100%;
@@ -459,23 +497,23 @@ X.0 Queries
     float: none;
     width: 100%;
   }
-  
+
 }
 
 @media (max-width: 600px) {
-  
+
   /*--- 1.0 Setup ---*/
-  
+
   body {
     font-size: 12px;
   }
-  
+
   /* 1.1 Grid */
-  
+
   .row {
     margin: 0.5% 0;
   }
- 
+
   .col-6 {
     width: 100%;
     float: none;
@@ -486,36 +524,36 @@ X.0 Queries
     margin-right: 0;
     margin-top: 0;
   }
-  
+
   .row .col-6:last-child {
     margin-bottom: 0;
   }
-  
+
   /*--- 2.0 Hero ---*/
-  
+
   .hero-box-img {
     width: 100%;
     float: none;
   }
-  
+
   .hero-box-img img {
     width: 200px;
     margin: 0 auto 20px;
   }
-  
+
   .hero-box-info {
     width: 100%;
     float: none;
     margin: 0;
     text-align: center;
   }
-  
+
   .hero-box-info h3 {
     margin: 4% 0;
   }
-  
+
   /*--- 3.0 About ---*/
-  
+
   .quotation {
     width: 100%;
     margin: 0 auto;
@@ -523,24 +561,24 @@ X.0 Queries
     letter-spacing: normal;
     word-spacing: normal;
   }
-  
+
   /*--- 4.0 Skills ---*/
-  
+
   .skills:after {
     display: none;
   }
-  
+
   .skill-lvl {
     width: 15px;
     height: 15px;
   }
-  
+
   /*--- 6.0 Links ---*/
-  
+
   .links-box {
     display: block;
     width: 100%;
     margin: 0 0 20px;
   }
-  
+
 }
